@@ -1,4 +1,5 @@
 #include<iostream>
+#include<bits/stdc++.h>
 #include<conio.h>
 #include<string.h>
 #include<stdlib.h>
@@ -104,7 +105,7 @@ patient linkedqueue :: input()
 
 void output(patient *p)
 {
-	cout<<"\n  \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd";
+	cout<<"\n  Pathology Lab management";
 	cout<<"\n   Patient data:\n";
 	cout<<"\n   First Name         : "<<p->firstname;
 	cout<<"\n   Last Name          : "<<p->lastname;
@@ -112,7 +113,7 @@ void output(patient *p)
 	cout<<"\n   Age                : "<<p->age;
 	cout<<"\n   Blood Group        : "<<p->blood;
 	cout<<"\n   Mobile Number      : "<<p->ID;
-	cout<<"\n\n  \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd";
+	cout<<"\n\n  Pathology Lab management";
 }
 void linkedqueue :: insertatbeg()
 {
@@ -157,9 +158,9 @@ void linkedqueue:: insertatend()
         last=p;
      }
      system("cls");
-     cout<<"\n  \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd";
-     cout<<"\n  |-- HOSPITAL MANAGEMENT SYSTEM --|";
-     cout<<"\n  \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\n";
+     cout<<"\n  -----------------------------------------------------------";
+     cout<<"\n  |-- PATHOLOGY LAB MANAGEMENT SYSTEM --|";
+     cout<<"\n -----------------------------------------------------------";
      cout <<"\n  ----------PATIENT ADDED-----------";
      output(p);
 }
@@ -187,9 +188,9 @@ void linkedqueue :: listofpatients()
      	cout<<"\n  No patient";
  	 }
  	      system("cls");
-     cout<<"\n  \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd";
-     cout<<"\n  |-- HOSPITAL MANAGEMENT SYSTEM --|";
-     cout<<"\n  \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\n";
+     cout<<"\n  -----------------------------------------------------------";
+     cout<<"\n  |-- PATHOLOGY LAB MANAGEMENT SYSTEM --|";
+     cout<<"\n -----------------------------------------------------------";
      patient*p=new patient;
      p=head;
      while(p!=NULL)
@@ -215,9 +216,9 @@ void departmentmenu (linkedqueue * q)
     while (choice != 5)
 	{
     system("cls");
-    cout<<"\n  \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd";
-    cout<<"\n  |-- HOSPITAL MANAGEMENT SYSTEM --|";
-    cout<<"\n  \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd";
+    cout<<"\n  -----------------------------------------------------------";
+    cout<<"\n  |-- PATHOLOGY LAB MANAGEMENT SYSTEM --|";
+    cout<<"\n -----------------------------------------------------------";
 	cout<<"\n\n   "<<q->departmentname;
 	cout<<"\n   [1] Add normal patient\n";
 	cout<<"   [2] Add critically ill patient\n";
@@ -261,15 +262,15 @@ int main ()
 
 	while(choice!=5)
 	{
-		strcpy(departments[0].departmentname,"GENERAL CLINIC\n");
-		strcpy(departments[1].departmentname,"HEART CLINIC\n");
-		strcpy(departments[2].departmentname,"LUNG CLINIC\n");
-		strcpy(departments[3].departmentname,"PLASTIC SURGERY\n");
+		strcpy(departments[0].departmentname,"Add to Blood Test\n");
+		strcpy(departments[1].departmentname,"Add to Medical Test\n");
+		strcpy(departments[2].departmentname,"Add to Magnetic resonance imaging (MRI)\n");
+		strcpy(departments[3].departmentname,"Add to Plastic Surgery\n");
 		system("cls");
-		cout<<"\n  \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd";
-		cout<<"\n  |-- HOSPITAL MANAGEMENT SYSTEM --|";
-		cout<<"\n  \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\n\n";
-		cout<<"   Main Menu\n\n";
+		cout<<"\n  -----------------------------------------------------------";
+        cout<<"\n  |-- PATHOLOGY LAB MANAGEMENT SYSTEM --|";
+        cout<<"\n -----------------------------------------------------------";
+		cout<<"\n\n   Main Menu\n\n";
 		for (i = 0; i < 4; i++)
 		{
 			cout<<"   "<<(i+1)<<": "<<departments[i].departmentname;
