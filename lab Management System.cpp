@@ -1,6 +1,5 @@
 #include<iostream>
 #include<bits/stdc++.h>
-#include<conio.h>
 #include<string.h>
 #include<stdlib.h>
 using namespace std;
@@ -227,29 +226,28 @@ void departmentmenu (linkedqueue * q)
 	cout<<"   [5] Change department or exit\n";
 	cout<<"\n   Please enter your choice : ";
 	choice=readnumber();
-	cout<<"  \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd";
-
+	cout<<"\n \n \n  🧬 Welcome to your environment 🧬 \n \n \n ";
     switch (choice)
 	{
 	  case 1:	q->insertatend();
 				cout << "\n   Press any key";
-	    		getch();
+	    	
 	 			break;
 
       case 2:	q->insertatbeg();
 	    		cout << "\n   Press any key";
-	    		getch();
+	    		
 				break;
 
       case 3:	q->getpatientout();
 	 			cout<<"\n   Press any key";
-     			getch();
+     			
 	      		break;
 
       case 4:	system("cls");
 	 			q->listofpatients();
 	 			cout<<"\n   Press any key";
-	 			getch();
+	 			
 				break;
 	 }
     }
